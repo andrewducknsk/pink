@@ -1,0 +1,10 @@
+.mood-up {
+}
+
+.mood-up__title {
+  @include app-info__title;
+}
+
+.mood-up__info {
+  @include app-info__info;
+}

@@ -1,0 +1,25 @@
+@import "sass/_scaffolding.scss";
+
+@import "sass/_mixin.scss";
+
+// Header
+
+@import "sass/page-header/_page-header.scss";
+
+// Main
+
+@import "sass/page-main/_page-main.scss",
+
+        "sass/page-main/app-intro/_app-intro.scss",
+
+        "sass/page-main/app-intro/intro-image/_intro-image.scss",
+
+        "sass/page-main/app-intro/link-download/_link-download.scss",
+
+        "sass/page-main/app-info/_app-info.scss",
+
+        "sass/page-main/app-info/mood-up/_mood-up.scss",
+
+        "sass/page-main/app-info/change-world/_change-world.scss",
+        
+        "sass/page-main/app-info/new-friends/_new-friends.scss";

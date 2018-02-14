@@ -1,0 +1,38 @@
+@font-face {
+  font-weight: 300;
+  font-display: swap;
+  src: url('../fonts/open-sans-300.woff'),
+       url('../fonts/open-sans-300.woff2');
+}
+
+@font-face {
+  font-weight: 400;
+  font-display: swap;
+  src: url('../fonts/open-sans-regular.woff'),
+       url('../fonts/open-sans-regular.woff2');
+}
+
+@font-face {
+  font-weight: 700;
+  font-display: swap;
+  src: url('../fonts/open-sans-700.woff'),
+       url('../fonts/open-sans-700.woff2');
+}
+
+body {
+  font-family: "Open Sans", Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
