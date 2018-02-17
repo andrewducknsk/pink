@@ -1,16 +1,9 @@
 .app-info {
   position: relative;
     &::before {
-      content: '';
-      position: absolute;
-      bottom: -5px;
-      left: 0;
-      z-index: -1;
-      display: block;
-      width: 320px;
+      @include bg-gray;
+      bottom: 0px;
       height: 810px;
-      background: #f2f2f2;
-      transform: skewY(-4deg);
     }
 }
 
@@ -35,4 +28,9 @@
 .app-info__title--second {
   margin-top: 35px;
   margin-bottom: 115px;
+}
+
+.app-info__hello-image {
+  position: relative;
+  z-index: -1;
 }

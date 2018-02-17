@@ -13,3 +13,29 @@
   line-height: 24px;
   color: #283645;
 }
+
+@mixin bg-gray {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: -1;
+    display: block;
+    width: 320px;
+    background: #f2f2f2;
+    transform: skewY(-4deg);
+}
+
+@mixin our__title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@mixin our__item {
+  margin: 0;
+  font-size: 24px;
+  line-height: 30px;
+  color: #d22856;
+}

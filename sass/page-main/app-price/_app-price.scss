@@ -1,0 +1,15 @@
+.app-price {
+  position: relative;
+  padding-bottom: 50px;
+    &::before {
+      @include bg-gray;
+      bottom: -20px;
+      height: 475px;
+    }
+}
+
+.app-price__slider-toggles {
+  width: 320px;
+  padding: 0 20px;
+  text-align: center;
+}
