@@ -331,7 +331,8 @@ a {
   margin-bottom: 135px;
   background: #fff; }
 
-.app-reviews__wrapper {
+.app-reviews__item {
+  width: 320px;
   padding: 0 20px;
   text-align: center; }
 
@@ -375,8 +376,7 @@ a {
   background: transparent; }
 
 .slider-item {
-  width: 320px;
-  padding: 0 20px; }
+  width: 320px; }
 
 .app-price {
   position: relative;
