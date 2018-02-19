@@ -5,8 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Pink</title>
+  <link rel="preload" href="./js/script.js" as="script">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/main.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
 
 <body>
@@ -31,8 +35,7 @@
         </li>
     </ul>
  </nav>
- <script type="text/javascript" src="./js/script.js"></script>
-</header>
+ </header>
 
   <main class="page-main">
     <section class="page-main__intro app-intro">
@@ -75,18 +78,34 @@
         </div>
       </section>
     <section class="page-main__reviews app-reviews">
-        <div class="app-reviews__wrapper">
-          <article class="app-reviews__item app-reviews__item--first">
-          <h3 class="app-reviews__title">Николай Петров</h3>
-          <p class="app-reviews__text">«Это приложение перевернуло мой мир и
+        <div class="app-reviews__wrapper slider">
+          <div class="slider-item">
+            <article class="app-reviews__item app-reviews__item--first">
+            <h3 class="app-reviews__title">Николай Петров</h3>
+            <p class="app-reviews__text">«Это приложение перевернуло мой мир и
             позволило по-новому взглянуть на привычные серые вещи!
             А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </article>
-          <div class="app-reviews__slider-toggles slider">
+          </div>
+          <div class="slider-item">
+            <article class="app-reviews__item app-reviews__item--first">
+            <h3 class="app-reviews__title">Николай Петров</h3>
+            <p class="app-reviews__text">«Это приложениеЭто приложениеЭто приложениеЭто приложениеЭто приложениеЭто приложениеженой в комментариях к выложенной фотографии!»</p>
+          </article>
+          </div>
+          <div class="slider-item">
+            <article class="app-reviews__item app-reviews__item--first">
+            <h3 class="app-reviews__title">Николай Петров</h3>
+            <p class="app-reviews__text">«Это приложение перевернуло мой мир и
+            позволило по-новому взглянуть на привычные серые вещи!
+            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </article>
+          </div>
+      <!--  <div class="app-reviews__slider-toggles slider">
             <button class="slider__toggle slider__toggle--active"></button>
             <button class="slider__toggle"></button>
             <button class="slider__toggle"></button>
-          </div>
+          </div> -->
         </div>
       </section>
     <section class="page-main__price app-price">
@@ -112,11 +131,11 @@
               <td class="table-version__unlim">Комментарии</td>
             </tr>
         </table>
-      <div class="app-price__slider-toggles slider">
+    <!--  <div class="app-price__slider-toggles slider">
           <button class="slider__toggle"></button>
           <button class="slider__toggle slider__toggle--active"></button>
           <button class="slider__toggle"></button>
-        </div>
+        </div>-->
     </section>
     <section class="page-main__contacts our-contacts">
       <div class="our-contacts__wrapper">
@@ -147,5 +166,7 @@
       <script type="text/javascript" charset="utf-8" async="" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A469bd32322e6d466013b93e905ff8179fe4d726220795d2bf01e8b9c08ddf061&amp;width=100%25&amp;height=300&amp;lang=ru_RU&amp;scroll=false"></script>
     </section>
   </main>
+  <script type="text/javascript" src="./js/script.js"></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
 </body>
 </html>
