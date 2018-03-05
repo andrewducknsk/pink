@@ -409,8 +409,12 @@ a {
     margin-top: 35px;
     margin-bottom: 115px; }
 
+.app-info__child-image {
+  display: none; }
+
 .app-info__hello-image {
   position: relative;
+  display: block;
   z-index: -1; }
 
 @media (min-width: 660px) {
