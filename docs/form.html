@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Pink</title>
+  <link rel="preload" href="./js/script.js" as="script">
+  <link rel="stylesheet" href="./css/normalize.css">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>-->
+</head>
+
+<body>
+  <header class="page-header">
+  <nav class="page-header__nav nav-site--nojs">
+    <a href="#" class="nav-site__logo">
+      <picture class="nav-site__logo-image">
+        <source media="(min-width: 1100px)" srcset="../img/logo-desktop.svg">
+        <source media="(min-width: 660px)" srcset="../img/logo-tablet.svg">
+        <img srcset="../img/logo-mobile.svg" alt="Логотип">
+      </picture>
+    </a>
+    <button class="nav-site__toggle" type="button" name="button">Открыть меню</button>
+    <ul class="nav-site__list">
+      <li class="nav-site__link">
+          <a href="index.html" class="nav-site__link-main">Главная</a>
+        </li>
+      <li class="nav-site__link">
+          <a href="photo.html" class="nav-site__link-photo">Фотографии</a>
+        </li>
+      <li class="nav-site__link">
+          <a href="form.html" class="nav-site__link-competition">Конкурс</a>
+        </li>
+      <li class="nav-site__link">
+          <a href="#" class="nav-site__link-academy">Html Academy</a>
+        </li>
+    </ul>
+ </nav>
+ </header>
+
+  <main class="page-form">
+    <section class="page-form__first-block intro-form">
+        <div class="intro-form__wrapper">
+          <h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+    <section class="page-form__second-block greeting-form">
+        <div class="greeting-form__wrapper">
+          <h2 class="greeting-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="greeting-form__title-add-text">Пожалуйста, заполните форму ниже:</span></h2>
+        </div>
+      </section>
+    <form class="page-form__third-block competition-form" method="get">
+        <section class="competition-form__first-block full-name">
+          <div class="full-name__wrapper">
+            <label class="full-name__item" for="surname">Фамилия:<input class="full-name__text" type="text" placeholder="Укажите фамилию *" id="surname" required=""></label>
+            <label class="full-name__item" for="name">Имя:<input class="full-name__text" type="text" placeholder="Введите ваше имя *" id="name" required=""></label>
+            <label class="full-name__item" for="patronymic">Отчество:<input class="full-name__text full-name__text--last" type="text" placeholder="Ну и отчество тоже" id="patronymic"></label>
+          </div>
+        </section>
+        <section class="competition-form__second-block achievements-in-journey">
+          <div class="achievements-in-journey__wrapper">
+            <h3 class="achievements-in-journey__title">Ваши безбашенные достижения в путешествии</h3>
+            <label class="achievements-in-journey__item" for="shark">
+              <input class="achievements-in-journey__check" id="shark" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Сделал селфи с акулой</label>
+            <label class="achievements-in-journey__item" for="scorched">
+              <input class="achievements-in-journey__check" id="scorched" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Обгорел на пляже</label>
+            <label class="achievements-in-journey__item" for="Chuck">
+              <input class="achievements-in-journey__check" id="Chuck" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Видел Чака Норриса</label>
+            <label class="achievements-in-journey__item" for="souvenirs">
+              <input class="achievements-in-journey__check" id="souvenirs" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Накупил сувениров</label>
+            <label class="achievements-in-journey__item" for="tower">
+              <input class="achievements-in-journey__check" id="tower" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Удержал башню</label>
+            <label class="achievements-in-journey__item" for="hotel">
+              <input class="achievements-in-journey__check" id="hotel" type="checkbox">
+              <span class="achievements-in-journey__icon"></span>Разгромил отель</label>
+            </div>
+          </section>
+        <section class="competition-form__third-block your-contacts">
+          <div class="your-contacts__wrapper">
+            <h3 class="your-contacts__title">Контактная информация</h3>
+            <div class="your-contacts__item-container">
+              <label class="your-contacts__item" for="your-phone">Номер телефона
+                <input class="your-contacts__text" type="phone" id="your-phone" placeholder="Номер, пожалуйста">
+                <span class="your-contacts__icon"></span>
+              </label>
+              <label class="your-contacts__item" for="your-email">Адрес почты
+                <input class="your-contacts__text your-contacts__text--last" type="email" id="your-email" placeholder="Введите почту *" required="">
+                <span class="your-contacts__icon your-contacts__icon--last"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="competition-form__fourth-block your-app">
+          <div class="your-app__wrapper">
+            <h3 class="your-app__title">С каким приложением путешествовали?</h3>
+            <label class="your-app__item" for="iOS"><input class="your-app__radio" id="iOS" type="radio"><span class="your-app__icon"></span>Pink для iOS</label>
+            <label class="your-app__item" for="Android"><input class="your-app__radio" id="Android" type="radio"><span class="your-app__icon"></span>Pink для Android</label>
+            <label class="your-app__item" for="Windows"><input class="your-app__radio" id="Windows" type="radio"><span class="your-app__icon"></span>Windows Phone</label>
+          </div>
+        </section>
+        <section class="competition-form__fifth your-emotions">
+          <div class="your-emotions__wrapper">
+            <h3 class="your-emotions__title">Опешите свои эмоции</h3>
+              <textarea class="your-emotions__text" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях">
+          </textarea></div>
+          </section>
+        <button class="competition-form__form-button form-btn" type="submit" name="button">Отправить форму</button>
+        <p class="competition-form__required-fields"><span class="competition-form__required-fields--pink-star">*</span> - Обязательные <span class="competition-form__required-fields--none">для заполнения</span> поля</p>
+        <dialog class="competition-form__sixth popup-send popup-send--none">
+          <div class="popup-send__wrapper">
+            <h2 class="popup-send__title">Ваша заявка отправлена</h2>
+            <p class="popup-send__text">Спасибо за Ваше участие, Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим Вас.</p>
+          </div>
+            <button class="popup-send__button form-btn" type="button" name="button">Закрыть окно</button>
+        </dialog>
+        <dialog class="competition-form__seventh popup-fail popup-fail--none">
+          <div class="popup-fail__wrapper">
+            <h3 class="popup-fail__title">Что-то пошло не так!</h3>
+            <p class="popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <button class="popup-fail__button form-btn" type="button" name="button">Ок</button>
+        </dialog>
+      </form>
+  </main>
+  <footer class="page-footer page-footer--none">
+  <div class="page-footer__wrapper">
+    <picture class="page-footer__icon">
+      <source media="(min-width: 1100px)" srcset="./img/logo-footer--desktop.svg">
+      <img src="./img/logo-footer--tablet.svg" alt="Логотип">
+    </picture>
+    <artice class="page-footer__social link-social">
+      <ul class="link-social__list">
+        <li class="link-social__links">
+          <a class="link-social__link-twitter" href="#">Twitter</a></li>
+        <li class="link-social__links">
+          <a class="link-social__link-facebook" href="#">Facebook</a></li>
+        <li class="link-social__links">
+          <a class="link-social__link-youtube" href="#">YouTube</a></li>
+      </ul>
+   </artice>
+   <article class="page-footer__copyright copyright-design">
+     <p class="copyright-design__developed">Разработано<a class="copyright-design__developed-by" href="https://htmlacademy.ru">Html Academy</a></p>
+   </article>
+ </div>
+</footer>
+
+  <script type="text/javascript" src="./js/picturefill.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>
