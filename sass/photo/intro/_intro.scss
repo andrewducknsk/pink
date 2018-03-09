@@ -1,0 +1,40 @@
+.intro {
+  height: 238px;
+  margin-top: -66px;
+  background: url("../img/bg-mobile.jpg") no-repeat top;
+
+}
+
+.intro__title {
+  width: 200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width: 660px) {
+  .intro {
+    height: 440px;
+    margin-top: -110px;
+    background: url("../img/bg-tablet.jpg") no-repeat top;
+  }
+
+  .intro__title {
+    width: 360px;
+    padding-top: 180px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro {
+    height: 395px;
+    margin-top: -110px;
+    background: url("../img/bg-desktop.jpg") no-repeat top;
+  }
+}

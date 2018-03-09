@@ -1,0 +1,45 @@
+.intro-form {
+  margin-top: -66px;
+  background: #2a3a4a url("../img/bg-mobile.jpg") no-repeat top;
+}
+
+.intro-form__wrapper {
+  padding: 0 20px;
+}
+
+.intro-form__title {
+  text-align: center;
+  margin: 0;
+  padding: 98px 0 48px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #fff;
+}
+
+@media (min-width: 660px) {
+  .intro-form {
+    margin-top: -110px;
+    background: #2a3a4a url("../img/bg-tablet.jpg") no-repeat top;
+  }
+
+  .intro-form__title {
+    padding: 182px 0 79px;
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro-form {
+    background: #2a3a4a url("../img/bg-desktop.jpg") no-repeat top;
+  }
+
+  .intro-form__wrapper {
+    padding: 0 80px;
+  }
+
+  .intro-form__title {
+    padding: 173px 0 101px;
+  }
+}

@@ -1,0 +1,32 @@
+.our-address {
+  position: relative;
+  z-index: 5;
+  padding-bottom: 22px;
+}
+
+.our-address__title {
+  @include our__title;
+}
+
+.our-address__item {
+  @include our__item;
+}
+
+@media (min-width: 660px) {
+  .our-address {
+    margin: 0 auto;
+    margin-top: 50px;
+    width: 300px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .our-address {
+    order: 2;
+    margin: 0;
+  }
+
+  .our-address__title {
+    @include our__title--desktop;
+  }
+}

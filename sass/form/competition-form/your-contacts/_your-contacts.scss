@@ -1,0 +1,125 @@
+.your-contacts {
+  padding-top: 34px;
+  padding-bottom: 42px;
+}
+
+.your-contacts__wrapper {
+  padding: 0 20px;
+}
+
+.your-contacts__title {
+  display: none;
+}
+
+.your-contacts__item {
+  padding-left: 22px;
+  padding-bottom: 7px;
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.your-contacts__text {
+    width: 280px;
+    height: 59px;
+    padding: 17px 20px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #283645;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+    transition: border-color .2s ease;
+    outline: none;
+      &--last {
+        margin-bottom: 0;
+      }
+  @include input-decoration;
+  @include placeholder-style;
+}
+
+@media (min-width: 660px) {
+  .your-contacts {
+    order: 3;
+    width: 100%;
+    padding: 0 20px;
+    padding-top: 33px;
+    padding-bottom: 32px;
+  }
+
+  .your-contacts__wrapper {
+    padding: 0 58px;
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+  }
+
+  .your-contacts__title {
+    display: block;
+    width: 253px;
+    margin: 0 auto;
+    margin-top: -9px;
+    margin-bottom: 36px;
+    padding: 0 28px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #d22856;
+    background: #fff;
+  }
+
+  .your-contacts__item {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    margin-bottom: 32px;
+    margin-left: 20px;
+      &:last-of-type {
+        margin-bottom: 28px;
+      }
+  }
+
+  .your-contacts__text {
+    width: 100%;
+    margin-bottom: 0;
+    margin-left: -20px;
+    padding-right: 53px;
+  }
+
+  .your-contacts__icon {
+    display: inline-block;
+    margin-left: auto;
+    margin-bottom: -59px;
+    width: 60px;
+    height: 59px;
+    background: #e5e5e5 url("../img/form/phone.svg") no-repeat center;
+    border-radius: 0 5px 5px 0;
+      &--last {
+        background: #e5e5e5 url("../img/form/mail.svg") no-repeat center;
+      }
+  }
+}
+
+@media (min-width: 1100px) {
+  .your-contacts {
+    padding: 33px 0 32px;
+  }
+
+  .your-contacts__item-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .your-contacts__item {
+    width: 375px;
+    align-self: flex-start;
+    padding-bottom: 15px;
+      &:last-of-type {
+        padding-bottom: 15px;
+      }
+  }
+}

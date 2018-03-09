@@ -1,0 +1,61 @@
+.toddler {
+  width: 240px;
+  margin: 0 auto;
+  padding-top: 33px;
+  padding-bottom: 28px;
+}
+
+.toddler__line {
+  display: inline-block;
+  width: 100%;
+  height: 2px;
+  margin-top: 9px;
+  margin-bottom: 6px;
+  background: #283645;
+}
+
+.toddler__dot {
+  position: relative;
+  top: -8px;
+  left: 0;
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #fff;
+  border: 2px solid #dd2658;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.toddler--tablet {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .toddler--tablet {
+    display: inline-block;
+  }
+
+  .toddler {
+    width: 202px;
+    margin-left: 30px;
+    margin-right: 20px;
+    padding: 0;
+  }
+
+  .toddler__line {
+    margin: 6px 0;
+  }
+
+  .toddler--mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .toddler {
+    width: 288px;
+    margin-left: 0;
+    margin-right: 30px;
+  }
+}

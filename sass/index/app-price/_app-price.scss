@@ -1,0 +1,47 @@
+.app-price {
+  position: relative;
+  padding-bottom: 50px;
+    &::before {
+      @include bg-gray;
+      bottom: -20px;
+      height: 390px;
+      z-index: 0;
+    }
+}
+
+.app-price__slider-toggles {
+  width: 320px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+@media (min-width: 660px) {
+  .app-price {
+    width: 660px;
+    padding: 0 20px;
+    padding-top: 54px;
+    margin-bottom: 70px;
+    &::before {
+      width: 660px;
+      height: 375px;
+      bottom: -95px;
+    }
+  }
+
+  .app-price__slider-toggles {
+    display: none;
+  }
+}
+
+@media (min-width: 1100px) {
+  .app-price {
+    width: 1100px;
+    margin-bottom: 0;
+    padding: 190px 80px 95px 80px;
+      &::before {
+        width: 1100px;
+        height: 524px;
+        bottom: -45px;
+      }
+  }
+}

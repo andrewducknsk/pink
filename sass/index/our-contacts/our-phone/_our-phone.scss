@@ -1,0 +1,32 @@
+.our-phone {
+  padding-bottom: 22px;
+}
+
+.our-phone__title {
+  @include our__title;
+}
+
+.our-phone__item {
+  @include our__item;
+}
+
+@media (min-width: 660px) {
+  .our-phone {
+    position: relative;
+    display: inline-block;
+    z-index: 5;
+    width: 295px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .our-phone {
+    order: 1;
+    margin: 0;
+  }
+
+  .our-phone__title {
+    @include our__title--desktop;
+  }
+}

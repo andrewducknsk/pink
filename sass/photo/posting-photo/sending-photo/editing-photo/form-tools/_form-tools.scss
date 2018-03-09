@@ -1,0 +1,120 @@
+.form-tools {
+  display: block;
+  text-align: center;
+  padding-top: 42px;
+}
+
+.form-tools input {
+  display: none;
+}
+
+.form-tools label {
+  display: inline-block;
+}
+
+.form-tools__icon {
+  display: flex;
+    &--first {
+      width: 44px;
+      height: 45px;
+      background: url("../img/photo/crop--mobile.svg") no-repeat center;
+    }
+    &--second {
+      width: 50px;
+      height: 45px;
+      margin-left: 35px;
+      margin-right: 40px;
+      opacity: .3;
+      background: url("../img/photo/fill--mobile.svg") no-repeat center;
+    }
+    &--third {
+      width: 34px;
+      height: 34px;
+      opacity: .3;
+      background: url("../img/photo/contrast--mobile.svg") no-repeat center;
+    }
+}
+
+@media (min-width: 660px) {
+  .form-tools {
+    display: inline-block;
+    text-align: right;
+    width: 300px;
+    padding: 0;
+  }
+
+  .form-tools__icon {
+    display: inline-block;
+    margin: 0;
+      &--first {
+        width: 22px;
+        height: 22px;
+        background-size: 22px;
+      }
+      &--second {
+        width: 22px;
+        height: 22px;
+        background-size: 25px 22px;
+      }
+      &--third {
+        width: 16px;
+        height: 16px;
+        background-size: 16px;
+      }
+  }
+
+  .form-tools label {
+    text-align: right;
+    margin-left: 20px;
+    padding-top: 23px;
+    padding-bottom: 26px;
+    border-bottom: 1px solid #dddfe0;
+      &:first-of-type {
+        padding-top: 9px;
+      }
+      &:last-of-type {
+        padding-bottom: 27px;
+      }
+  }
+}
+
+@media (min-width: 1100px) {
+  .form-tools {
+    width: 410px;
+  }
+
+  .form-tools label {
+    margin-left: 0;
+    padding-top: 15px;
+    padding-bottom: 11px;
+      &:first-of-type {
+        padding-top: 0;
+      }
+      &:last-of-type {
+        padding-top: 16px;
+        padding-left: 7px;
+        padding-bottom: 17px;
+      }
+  }
+
+  .form-tools__icon {
+      &--first {
+        width: 44px;
+        height: 44px;
+        margin-right: 43px;
+        background-size: 44px;
+      }
+      &--second {
+        width: 48px;
+        height: 43px;
+        margin-right: 39px;
+        background-size: 48px 43px;
+      }
+      &--third {
+        width: 32px;
+        height: 32px;
+        margin-right: 48px;
+        background-size: 32px;
+      }
+  }
+}

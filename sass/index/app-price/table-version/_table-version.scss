@@ -1,0 +1,221 @@
+.table-version {
+  position: relative;
+  z-index: 5;
+  margin-left: -260px;
+  margin-bottom: 40px;
+  width: 840px;
+  background: #fff;
+  border-collapse: collapse;
+}
+
+.table-version td {
+  border: 2px solid #f2f2f2;
+}
+
+.table-version__base,
+.table-version__unlim,
+.table-version__standart {
+  padding: 19px 0;
+  width: 280px;
+}
+
+.table-version__title {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  background: #283645;
+}
+
+.table-version__title span {
+  display: inline-block;
+  width: 100%;
+  font-size: 24px;
+  font-weight: 300;
+}
+
+.table-version__title .table-version__standart  {
+  position: relative;
+  &::before {
+    content: 'Хит';
+    position: absolute;
+    top: 14px;
+    left: -29px;
+    display: inline-block;
+    width: 52px;
+    height: 0;
+    font-size: 14px;
+    font-weight: 600;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #d22856;
+    transform: rotate(-45deg);
+  }
+}
+
+.table-version__title,
+.table-version__pink-filter,
+.table-version__smile,
+.table-version__comments {
+   & .table-version__line-name {
+    display: table-cell;
+  }
+}
+
+.table-version__pink-filter,
+.table-version__smile,
+.table-version__comments {
+  font-size: 14px;
+  line-height: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #283645;
+    & td {
+      padding: 15px 0;
+      padding-left: 23px;
+      padding-right: 17px;
+    }
+}
+
+.table-version__pink-filter td {
+  background: url("../img/table-yes.svg") no-repeat right;
+  background-origin: content-box;
+}
+
+.table-version__smile td {
+  background: url("../img/table-yes.svg") no-repeat right;
+  background-origin: content-box;
+    &:nth-of-type(2) {
+      background: url("../img/table-no.svg") no-repeat right;
+      background-origin: content-box;
+    }
+}
+
+.table-version__comments td {
+  background: url("../img/table-no.svg") no-repeat right;
+  background-origin: content-box;
+    &:last-of-type {
+      background: url("../img/table-yes.svg") no-repeat right;
+      background-origin: content-box;
+    }
+}
+
+@media (min-width: 660px) {
+  .table-version {
+    margin: 0;
+    width: 620px;
+  }
+
+  .table-version td {
+    border: 2px solid #e5e5e5;
+  }
+
+  .table-version__title {
+    font-size: 16px;
+  }  }
+
+  .table-version__title span {
+    font-size: 18px;
+  }
+
+  .table-version__title .table-version__standart {
+    &::before {
+      top: 5px;
+      left: -21px;
+      width: 25px;
+      border-left: 27px solid transparent;
+      border-right: 27px solid transparent;
+      border-bottom: 27px solid #d22856;
+    }
+  }
+
+
+  .table-version__title,
+  .table-version__pink-filter,
+  .table-version__smile,
+  .table-version__comments {
+     & .table-version__line-name {
+       display: none;
+       width: 156px;
+    }
+  }
+
+  .table-version .table-version__line-name {
+    padding: 0;
+    padding-left: 15px;
+    font-size: 14px;
+    line-height: 30px;
+    text-transform: none;
+    background: none;
+  }
+
+  .table-version__title .table-version__line-name {
+    background: #f2f2f2;
+    border-top: 2px solid #f2f2f2;
+    border-left: 2px solid #f2f2f2;
+  }
+
+  .table-version__line-name,
+  .table-version__base,
+  .table-version__unlim,
+  .table-version__standart {
+    width: 154px;
+    padding: 8px 0;
+  }
+
+  .table-version__pink-filter,
+  .table-version__smile,
+  .table-version__comments {
+    height: 45px;
+    font-size: 0;
+    line-height: 0;
+      &  td {
+        background-position: center;
+        &:nth-of-type(2) {
+          background-position: center;
+        }
+        &:last-of-type {
+          background-position: center;
+        }
+      }
+}
+
+@media (min-width: 1100px) {
+  .table-version {
+    width: 940px;
+  }
+
+  .table-version__title {
+    font-size: 18px;
+  }
+
+  .table-version__title span {
+    font-size: 24px;
+  }
+
+  .table-version__line-name,
+  .table-version__base,
+  .table-version__unlim,
+  .table-version__standart {
+    padding: 17px 0;
+  }
+
+  .table-version__pink-filter,
+  .table-version__smile,
+  .table-version__comments {
+    height: 60px;
+      & td {
+        background-position: center;
+      }
+  }
+
+  .table-version__smile td:nth-of-type(2) {
+    background-position: center;
+  }
+
+  .table-version__comments td:last-of-type {
+    background-position: center;
+  }
+}

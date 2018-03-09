@@ -1,0 +1,19 @@
+.child-image__item {
+  display: none;
+}
+
+.child-image__item--hello {
+  position: relative;
+  display: block;
+  z-index: -1;
+}
+
+@media (min-width: 1100px) {
+  .child-image__item {
+    order: 1;
+    display: inline-block;
+      &:nth-of-type(2) {
+        margin: 0 24px;
+      }
+  }
+}

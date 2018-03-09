@@ -1,0 +1,25 @@
+.mood-up {
+  padding-bottom: 35px;
+}
+
+.mood-up__title {
+  @include app-info__title;
+}
+
+.mood-up__info {
+  @include app-info__info;
+}
+
+@media (min-width: 1100px) {
+  .mood-up {
+    @include app-info__child--desktop;
+  }
+
+  .mood-up__title {
+    @include app-info__title--desktop;
+  }
+
+  .mood-up__info {
+    @include app-info__info--desktop;
+  }
+}

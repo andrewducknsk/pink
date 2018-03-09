@@ -1,0 +1,25 @@
+.new-friends {
+  padding-bottom: 0;
+}
+
+.new-friends__title {
+  @include app-info__title ;
+}
+
+.new-friends__info {
+  @include app-info__info;
+}
+
+@media (min-width: 1100px) {
+  .new-friends {
+    @include app-info__child--desktop;
+  }
+
+  .new-friends__title {
+    @include app-info__title--desktop;
+  }
+
+  .new-friends__info {
+    @include app-info__info--desktop;
+  }
+}

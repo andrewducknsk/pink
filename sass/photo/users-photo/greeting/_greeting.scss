@@ -1,0 +1,27 @@
+.greeting__text {
+  margin: 0;
+  padding: 0 15px;
+  padding-top: 47px;
+  padding-bottom: 48px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+}
+
+@media (min-width: 660px) {
+  .greeting {
+    width: 100%;
+  }
+
+  .greeting__text {
+    padding: 95px 30px 75px;
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .greeting__text {
+    padding: 95px 210px 85px;
+  }
+}

@@ -1,0 +1,43 @@
+.link-download {
+  margin-top: 32px;
+  padding: 0;
+}
+
+.link-download__item {
+  display: inline-block;
+}
+
+.link-download__appstore,
+.link-download__google-play,
+.link-download__windows-store {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0;
+}
+
+.link-download__appstore {
+  width: 49px;
+  height: 58px;
+  margin-left: 35px;
+  background: url("../img/app-store.svg") no-repeat center;
+}
+
+.link-download__google-play {
+  width: 45px;
+  height: 48px;
+  margin: 0 31px;
+  background: url("../img/google-play.svg") no-repeat center;
+}
+
+.link-download__windows-store {
+  width: 44px;
+  height: 41px;
+  margin-right: 36px;
+  background: url("../img/windows-store.svg") no-repeat center;
+}
+
+@media (min-width: 1100px) {
+  .link-download {
+    margin-top: 67px;
+  }
+}

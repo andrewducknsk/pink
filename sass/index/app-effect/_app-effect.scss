@@ -1,0 +1,55 @@
+.app-effect {
+  display: none;
+}
+
+@media (min-width: 660px) {
+  .app-effect {
+    display: block;
+    width: 660px;
+    margin-top: -70px;
+    padding-top: 59px;
+    padding-bottom: 50px;
+    background: #fff;
+  }
+
+  .app-effect__wrapper {
+    padding: 0 20px;
+  }
+
+  .app-effect__time {
+    padding-top: 45px;
+  }
+
+  .app-effect__time-day {
+    display: block;
+    width: 239px;
+    height: 200px;
+    margin-top: -200px;
+    text-align: center;
+    font-size: 96px;
+    line-height: 150px;
+    color: #d22856;
+  }
+}
+
+@media (min-width: 1100px) {
+  .app-effect {
+    width: 1100px;
+    margin-top: 0;
+    padding-top: 60px;
+    padding-bottom: 66px;
+    background: #f2f2f2;
+  }
+
+  .app-effect__wrapper {
+    padding: 0 80px;
+  }
+
+  .app-effect__time-day {
+    width: 298px;
+    height: 253px;
+    margin-top: -253px;
+    font-size: 120px;
+    line-height: 187px;
+  }
+}

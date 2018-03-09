@@ -1,0 +1,21 @@
+.child-text {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 660px) {
+  .child-text {
+    width: 350px;
+    padding: 72px 5px 0 40px;
+    float: right;
+  }
+}
+
+@media (min-width: 1100px) {
+  .child-text {
+    order: 2;
+    z-index: 1;
+    width: 100%;
+    margin-top: -82px;
+    padding: 0;
+  }
+}

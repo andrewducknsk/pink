@@ -1,0 +1,112 @@
+.info-from-users {
+  margin-top: -3px;
+  background: #f2f2f2;
+}
+
+.info-from-users__wrapper {
+  padding: 0 18px;
+}
+
+.info-from-users__name-user {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #283645;
+}
+
+.info-from-users__time-fasting {
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.info-from-users__text {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #283645;
+}
+
+.info-from-users__like {
+  margin: 0;
+  margin-top: 15px;
+  padding-bottom: 26px;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.info-from-users__like-icon {
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  margin-right: 20px;
+  background: url("../img/photo/icon-like--mobile.svg") no-repeat center;
+}
+
+@media (min-width: 660px) {
+  .info-from-users__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 18px;
+    min-height: 155px;
+  }
+
+  .info-from-users__name-user {
+    padding-top: 25px;
+  }
+
+  .info-from-users__like {
+    display: flex;
+    align-items: baseline;
+    margin-top: auto;
+    padding-top: 9px;
+    padding-bottom: 24px;
+  }
+
+  .info-from-users__like-icon {
+    order: 2;
+    margin-right: 0;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .panorama-of-day .info-from-users__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    min-height: 97px;
+    padding: 0 30px 0 28px;
+  }
+
+  .panorama-of-day .info-from-users__name-user {
+    order: 1;
+    width: 200px;
+    height: 45px;
+  }
+
+  .panorama-of-day .info-from-users__text {
+    order: 3;
+    margin-top: 3px;
+    padding-bottom: 23px;
+  }
+
+  .panorama-of-day .info-from-users .info-from-users__like {
+    order: 2;
+    width: 120px;
+    height: 45px;
+    margin: 0 auto;
+    margin-right: 0;
+    padding: 0;
+    padding-top: 25px;
+  }
+
+  .info-from-users__wrapper {
+    padding: 0 30px;
+  }
+}

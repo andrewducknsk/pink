@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <include src="html/head.html"></include>
+<body>
+  <include src="html/header.html"></include>
+  <main class="page-main">
+    <section class="page-main__first-block intro-form">
+        <div class="intro-form__wrapper">
+          <h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+        </div>
+      </section>
+    <section class="page-main__second-block greeting-form">
+        <div class="greeting-form__wrapper">
+          <h2 class="greeting-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+          <span class="greeting-form__title-add-text">Пожалуйста, заполните форму ниже:</span></h2>
+        </div>
+      </section>
+    <form class="page-main__third-block competition-form" method="get" name="form">
+        <section class="competition-form__first-block full-name">
+          <div class="full-name__wrapper">
+            <label class="full-name__item" for="surname">Фамилия:
+              <input class="full-name__text" type="text" placeholder="Укажите фамилию *" name="form" id="surname"  required></label>
+            <label class="full-name__item" for="name">Имя:
+              <input class="full-name__text" type="text" placeholder="Введите ваше имя *" name="form" id="name"  required></label>
+            <label class="full-name__item" for="patronymic">Отчество:
+              <input class="full-name__text full-name__text--last" type="text" placeholder="Ну и отчество тоже" name="form" id="patronymic"></label>
+          </div>
+        </section>
+        <section class="competition-form__second-block achievements-in-journey">
+          <div class="achievements-in-journey__wrapper">
+            <h3 class="achievements-in-journey__title">Ваши безбашенные достижения в путешествии</h3>
+            <label class="achievements-in-journey__item" for="shark">
+              <input class="achievements-in-journey__check" id="shark" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Сделал селфи с акулой</label>
+            <label class="achievements-in-journey__item" for="scorched">
+              <input class="achievements-in-journey__check" id="scorched" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Обгорел на пляже</label>
+            <label class="achievements-in-journey__item" for="Chuck">
+              <input class="achievements-in-journey__check" id="Chuck" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Видел Чака Норриса</label>
+            <label class="achievements-in-journey__item" for="souvenirs">
+              <input class="achievements-in-journey__check" id="souvenirs" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Накупил сувениров</label>
+            <label class="achievements-in-journey__item" for="tower">
+              <input class="achievements-in-journey__check" id="tower" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Удержал башню</label>
+            <label class="achievements-in-journey__item" for="hotel">
+              <input class="achievements-in-journey__check" id="hotel" type="checkbox" name="form">
+              <span class="achievements-in-journey__icon"></span>Разгромил отель</label>
+            </div>
+          </section>
+        <section class="competition-form__third-block your-contacts">
+          <div class="your-contacts__wrapper">
+            <h3 class="your-contacts__title">Контактная информация</h3>
+            <div class="your-contacts__item-container">
+              <label class="your-contacts__item" for="your-phone">Номер телефона
+                <input class="your-contacts__text" type="phone" id="your-phone" placeholder="Номер, пожалуйста" name="form">
+                <span class="your-contacts__icon"></span>
+              </label>
+              <label class="your-contacts__item" for="your-email">Адрес почты
+                <input class="your-contacts__text your-contacts__text--last" type="email" id="your-email" placeholder="Введите почту *" name="form" required>
+                <span class="your-contacts__icon your-contacts__icon--last"></span>
+              </label>
+            </div>
+          </div>
+        </section>
+        <section class="competition-form__fourth-block your-app">
+          <div class="your-app__wrapper">
+            <h3 class="your-app__title">С каким приложением путешествовали?</h3>
+            <label class="your-app__item" for="iOS">
+              <input class="your-app__radio" id="iOS" type="radio" name="app">
+              <span class="your-app__icon"></span>Pink для iOS</label>
+            <label class="your-app__item" for="Android">
+              <input class="your-app__radio" id="Android" type="radio" name="app">
+              <span class="your-app__icon"></span>Pink для Android</label>
+            <label class="your-app__item" for="Windows">
+              <input class="your-app__radio" id="Windows" type="radio" name="app">
+              <span class="your-app__icon"></span>Windows Phone</label>
+          </div>
+        </section>
+        <section class="competition-form__fifth your-emotions">
+          <div class="your-emotions__wrapper">
+            <h3 class="your-emotions__title">Опешите свои эмоции</h3>
+              <textarea class="your-emotions__text" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="form"></textarea>
+          </div>
+          </section>
+        <button class="competition-form__form-button form-btn" type="submit" name="form">Отправить форму</button>
+        <p class="competition-form__required-fields"><span class="competition-form__required-fields--pink-star">*</span> - Обязательные <span class="competition-form__required-fields--none">для заполнения</span> поля</p>
+        <dialog class="competition-form__sixth popup-send popup-send--none">
+          <div class="popup-send__wrapper">
+            <h2 class="popup-send__title">Ваша заявка отправлена</h2>
+            <p class="popup-send__text">Спасибо за Ваше участие, Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим Вас.</p>
+          </div>
+            <button class="popup-send__button form-btn" type="button" name="button">Закрыть окно</button>
+        </dialog>
+        <dialog class="competition-form__seventh popup-fail popup-fail--none">
+          <div class="popup-fail__wrapper">
+            <h3 class="popup-fail__title">Что-то пошло не так!</h3>
+            <p class="popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+          </div>
+          <button class="popup-fail__button form-btn" type="button" name="button">Ок</button>
+        </dialog>
+      </form>
+  </main>
+  <include src="html/footer.html"></include>
+  <script type="text/javascript" src="./js/picturefill.js"></script>
+  <script type="text/javascript" src="./js/script.js"></script>
+</body>
+</html>

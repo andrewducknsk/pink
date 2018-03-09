@@ -1,0 +1,19 @@
+.app-intro {
+  min-height: 462px;
+  margin-top: -66px;
+}
+
+@media (min-width: 660px) {
+  .app-intro {
+    display: inline-block;
+    width: 100%;
+    margin-top: -110px
+  }
+}
+
+@media (min-width: 1100px) {
+  .app-intro {
+    padding: 0 80px;
+    background: #2a3a4a url("../img/bg-desktop.jpg") no-repeat center;
+  }
+}

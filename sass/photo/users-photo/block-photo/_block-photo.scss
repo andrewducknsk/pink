@@ -1,0 +1,50 @@
+.block-photo {
+  margin-bottom: 20px;
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+}
+
+.block-photo__panorama-of-day-image {
+  position: relative;
+  margin-left: -20px;
+    &::before {
+      content: 'Панорома дня';
+      position: absolute;
+      top: -120px;
+      right: 20px;
+      display: block;
+      width: 140px;
+      padding: 6px 0;
+      text-align: center;
+      font-size: 12px;
+      line-height: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #fff;
+      background: #d22856;
+    }
+}
+
+@media (min-width: 660px) {
+  .block-photo {
+    width: 100%;
+      &:nth-child(n+3) {
+        width: 300px;
+      }
+  }
+
+
+  .block-photo__panorama-of-day-image {
+    &::before {
+      top: -435px;
+    }
+  }
+}
+
+
+@media (min-width: 1100px) {
+  .block-photo__panorama-of-day-image {
+    margin-left: -135px;
+  }
+}

@@ -1,0 +1,16 @@
+.page-form {
+  width: 320px;
+}
+
+@media (min-width: 660px) {
+  .page-form {
+    position: relative;
+    width: 660px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .page-form {
+    width: 1100px;
+  }
+}

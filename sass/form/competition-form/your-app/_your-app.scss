@@ -1,0 +1,99 @@
+.your-app {
+  background: #f2f2f2;
+}
+
+.your-app__wrapper {
+  padding: 0 20px;
+}
+
+.your-app__title {
+  margin: 0;
+  margin-bottom: 37px;
+  padding-top: 41px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #d22856;
+}
+
+.your-app__item {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 35px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 400;
+  color: #283645;
+    &:last-of-type {
+      margin-bottom: 0;
+      padding-bottom: 42px;
+    }
+}
+
+.your-app__radio {
+  display: none;
+}
+
+.your-app__icon {
+  position: relative;
+  display: inline-block;
+  width: 39px;
+  height: 39px;
+  margin-right: 31px;
+  vertical-align: middle;
+  background: #fff;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
+  @include input-decoration;
+}
+
+.your-app__radio[type="radio"]:checked~.your-app__icon::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 15px;
+  height: 15px;
+  margin-top: -7.5px;
+  margin-left: -7.5px;
+  background: #d22856;
+  border-radius: 50%;
+}
+
+@media (min-width: 660px) {
+  .your-app {
+    order: 2;
+    padding: 0 20px;
+    padding-top: 31px;
+    padding-bottom: 32px;
+    background: none;
+  }
+
+  .your-app__wrapper {
+    border: 2px solid #e5e5e5;
+    border-radius: 5px;
+  }
+
+  .your-app__title {
+    width: 343px;
+    margin: 0 auto;
+    margin-top: -9px;
+    margin-bottom: 44px;
+    padding: 0 12px;
+    background: #fff;
+  }
+}
+
+@media (min-width: 1100px) {
+  .your-app {
+    width: 470px;
+    padding: 32px 0 32px 34px;
+  }
+
+  .your-app__item {
+    padding: 0 54px;
+  }
+}

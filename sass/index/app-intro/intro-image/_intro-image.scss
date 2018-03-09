@@ -1,0 +1,49 @@
+.intro-image {
+  position: relative;
+  height: 463px;
+  background: #2a3a4a url("../img/bg-mobile.jpg") no-repeat center;
+}
+
+.intro-image__hand {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  z-index: 2;
+}
+
+.intro-image__result-app {
+  position: absolute;
+  right: 105px;
+  bottom: 81px;
+  z-index: 1;
+}
+
+@media (min-width: 660px) {
+  .intro-image {
+    min-height: 729px;
+    background: #2a3a4a url("../img/bg-tablet.jpg") no-repeat center;
+  }
+
+  .intro-image__result-app {
+    right: 95px;
+    bottom: 140px;
+  }
+}
+
+@media (min-width: 1100px) {
+  .intro-image {
+    min-height: 853px;
+    padding: 0;
+    background: none;
+  }
+
+  .intro-image__hand {
+    left: 25px;
+    bottom: -3px;
+  }
+
+  .intro-image__result-app {
+    right: 115px;
+    bottom: 170px;
+  }
+}

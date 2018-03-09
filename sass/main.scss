@@ -4,38 +4,109 @@
 
 // Header
 
-@import "sass/page-header/_page-header.scss";
+@import "sass/page-header/_page-header.scss",
+
+        "sass/page-header/nav-site/_nav-site.scss";
 
 // Main
+@import "sass/page-main/_page-main.scss";
 
-@import "sass/page-main/_page-main.scss",
+// Index
 
-        "sass/page-main/app-intro/_app-intro.scss",
+@import "sass/index/app-intro/_app-intro.scss",
 
-        "sass/page-main/app-intro/intro-image/_intro-image.scss",
+        "sass/index/app-intro/intro-image/_intro-image.scss",
 
-        "sass/page-main/app-intro/link-download/_link-download.scss",
+        "sass/index/app-download/_app-download.scss",
 
-        "sass/page-main/app-info/_app-info.scss",
+        "sass/index/app-download/link-download/_link-download.scss",
 
-        "sass/page-main/app-info/mood-up/_mood-up.scss",
+        "sass/index/app-info/_app-info.scss",
 
-        "sass/page-main/app-info/change-world/_change-world.scss",
+        "sass/index/app-info/child-text/_child-text.scss",
 
-        "sass/page-main/app-info/new-friends/_new-friends.scss",
+        "sass/index/app-info/child-text/mood-up/_mood-up.scss",
 
-        "sass/page-main/app-reviews/_app-reviews.scss",
+        "sass/index/app-info/child-text/change-world/_change-world.scss",
 
-        "sass/page-main/app-reviews/slider/_slider.scss",
+        "sass/index/app-info/child-text/new-friends/_new-friends.scss",
 
-        "sass/page-main/app-price/_app-price.scss",
+        "sass/index/app-info/child-image/_child-image.scss",
 
-        "sass/page-main/app-price/table-version/_table-version.scss",
+        "sass/index/app-effect/_app-effect.scss",
 
-        "sass/page-main/our-contacts/_our-contacts.scss",
+        "sass/index/app-effect/_british-study.scss",
 
-        "sass/page-main/our-contacts/our-phone/_our-phone.scss",
+        "sass/index/app-reviews/_app-reviews.scss",
 
-        "sass/page-main/our-contacts/our-email/_our-email.scss",
+        "sass/index/app-reviews/slider/_slider.scss",
 
-        "sass/page-main/our-contacts/our-address/_our-address.scss";
+        "sass/index/app-price/_app-price.scss",
+
+        "sass/index/app-price/table-version/_table-version.scss",
+
+        "sass/index/our-contacts/_our-contacts.scss",
+
+        "sass/index/our-contacts/our-phone/_our-phone.scss",
+
+        "sass/index/our-contacts/our-email/_our-email.scss",
+
+        "sass/index/our-contacts/our-address/_our-address.scss";
+
+// Photo
+@import "sass/photo/intro/_intro.scss",
+
+        "sass/photo/users-photo/_users-photo.scss",
+
+        "sass/photo/users-photo/greeting/_greeting.scss",
+
+        "sass/photo/users-photo/block-photo/_block-photo.scss",
+
+        "sass/photo/users-photo/info-from-users/_info-from-users.scss",
+
+        "sass/photo/posting-photo/_posting-photo.scss",
+
+        "sass/photo/posting-photo/slogan/_slogan.scss",
+
+        "sass/photo/posting-photo/sending-photo/_sending-photo.scss",
+
+        "sass/photo/posting-photo/sending-photo/editing-photo/_editing-photo.scss",
+
+        "sass/photo/posting-photo/sending-photo/editing-photo/form-tools/_form-tools.scss",
+
+        "sass/photo/posting-photo/sending-photo/editing-photo/form-toddler/_toddler.scss",
+
+        'sass/photo/posting-photo/sending-photo/editing-photo/form-buttons/_form-buttons.scss';
+
+// Form
+@import "sass/form/_page-form.scss",
+
+        "sass/form/intro-form/_intro-form.scss",
+
+        "sass/form/greeting-form/_greeting-form.scss",
+
+        "sass/form/competition-form/_competition-form.scss",
+
+        "sass/form/competition-form/achievements-in-journey/_achievements-in-journey.scss",
+
+        "sass/form/competition-form/form-btn/_form-btn.scss",
+
+        "sass/form/competition-form/full-name/_full-name.scss",
+
+        "sass/form/competition-form/your-app/_your-app.scss",
+
+        "sass/form/competition-form/your-contacts/_your-contacts.scss",
+
+        "sass/form/competition-form/your-emotions/_your-emotions.scss",
+
+        "sass/form/competition-form/popup-send/_popup-send.scss",
+
+        "sass/form/competition-form/popup-fail/_popup-fail.scss";
+
+// Footer
+
+@import "sass/page-footer/_page-footer.scss",
+
+        "sass/page-footer/link-social/_link-social.scss",
+
+        "sass/page-footer/copyright-design/_copyright-design.scss";
