@@ -12,18 +12,28 @@
     }
 }
 
+.competition-form__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
 .competition-form__required-fields--none {
   display: none;
 }
 
 @media (min-width: 660px) {
   .competition-form {
-    display: flex;
-    flex-wrap: wrap;
     padding-bottom: 51px;
   }
 
+  .competition-form__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
   .competition-form__required-fields {
+    display: inline-block;
     order: 7;
     padding-right: 20px;
     margin: 0;
@@ -34,6 +44,10 @@
 @media (min-width: 1100px) {
   .competition-form {
     padding: 0 80px;
+  }
+
+  .competition-form__wrapper {
+    width: 1100px;
   }
 
    .competition-form__required-fields--none {

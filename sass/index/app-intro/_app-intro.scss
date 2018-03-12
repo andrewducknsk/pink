@@ -1,19 +1,37 @@
 .app-intro {
+  width: 100%;
   min-height: 462px;
   margin-top: -66px;
+  background: #2a3a4a url("../img/bg-mobile.jpg") no-repeat top;
+  background-size: cover;
+}
+
+.app-intro__wrapper {
+  position: relative;
+  margin: 0 auto;
 }
 
 @media (min-width: 660px) {
   .app-intro {
-    display: inline-block;
     width: 100%;
-    margin-top: -110px
+    margin-top: -110px;
+    background: #2a3a4a url("../img/bg-tablet.jpg") no-repeat top;
+    background-size: cover;
+  }
+
+  .app-intro__wrapper {
+    width: 660px;
   }
 }
 
 @media (min-width: 1100px) {
   .app-intro {
     padding: 0 80px;
-    background: #2a3a4a url("../img/bg-desktop.jpg") no-repeat center;
+    background: #2a3a4a url("../img/bg-desktop.jpg") no-repeat top;
+    background-size: cover;
+  }
+
+  .app-intro__wrapper {
+    width: 1100px;
   }
 }

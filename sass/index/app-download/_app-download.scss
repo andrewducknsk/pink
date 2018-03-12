@@ -1,4 +1,6 @@
 .app-download {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding-top: 28px;
   padding-bottom: 31px;
@@ -6,6 +8,8 @@
 }
 
 .app-download__wrapper {
+  width: 320px;
+  margin: 0 auto;
   padding: 0 20px;
 }
 
@@ -47,7 +51,7 @@
 @media (min-width: 660px) {
   .app-download {
     position: absolute;
-    top: 115px;
+    top: 225px;
     left: 20px;
     z-index: 2;
     display: block;
@@ -75,8 +79,7 @@
 
 @media (min-width: 1100px) {
   .app-download {
-    top: 100px;
-    left: 80px;
+    top: 215px;
     width: 300px;
   }
 

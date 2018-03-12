@@ -1,5 +1,4 @@
 .app-reviews {
-  width: 320px;
   margin-top: -45px;
   padding-bottom: 65px;
   padding-top: 45px;
@@ -38,15 +37,20 @@
 
 @media (min-width: 660px) {
   .app-reviews {
-    width: 660px;
     margin-bottom: 0;
     padding-top: 50px;
     padding-bottom: 54px;
   }
 
+  .app-reviews__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+
   .app-reviews__item {
     display: flex;
     flex-direction: column;
+    width: 660px;
     padding-bottom: 32px;
   }
 
@@ -77,13 +81,13 @@
 @media (min-width: 1100px) {
   .app-reviews {
     position: relative;
-    width: 1100px;
     margin-top: 72px;
     padding: 0 80px;
     background: url("../img/quotes.svg") no-repeat top center;
   }
 
   .app-reviews__wrapper {
+    width: 1100px;
     padding: 0;
   }
 

@@ -3,36 +3,38 @@
 <include src="html/head.html"></include>
 <body>
 <include src="html/header.html"></include>
-  <main class="page-main">
-    <section class="page-main__first-block app-intro">
-      <div class="app-intro__wrapper">
-        <div class="app-intro__first-block intro-image">
-          <picture class="intro-image__hand">
-            <source media="(min-width: 1100px)" srcset="./img/image-hand-desktop.png" >
-            <source media="(min-width: 660px)" srcset="./img/image-hand-tablet.png" >
-            <img src="./img/image-hand.png" alt="Изображение руки с телефоном">
-          </picture>
-          <picture class="intro-image__result-app">
-            <source media="(min-width: 1100px)" srcset="./img/image-pink-ip-desktop.jpg" >
-            <source media="(min-width: 660px)" srcset="./img/image-pink-ip-tablet.jpg">
-            <img src="./img/image-pink-ip.jpg" alt="Результат приложения">
-          </picture>
-        </div>
+<section class="page-main__first-block app-intro">
+  <div class="app-intro__wrapper">
+    <div class="app-intro__first-block intro-image">
+      <div class="intro-image__wrapper">
+        <picture class="intro-image__hand">
+          <source media="(min-width: 1100px)" srcset="./img/image-hand-desktop.png" >
+          <source media="(min-width: 660px)" srcset="./img/image-hand-tablet.png" >
+          <img src="./img/image-hand.png" alt="Изображение руки с телефоном">
+        </picture>
+        <picture class="intro-image__result-app">
+          <source media="(min-width: 1100px)" srcset="./img/image-pink-ip-desktop.jpg" >
+          <source media="(min-width: 660px)" srcset="./img/image-pink-ip-tablet.jpg">
+          <img src="./img/image-pink-ip.jpg" alt="Результат приложения">
+        </picture>
       </div>
-    </section>
-    <section class="page-main__second-block app-download">
-          <div class="app-download__wrapper">
-            <h1 class="app-download__title">Взгляните на жизнь иначе!</h1>
-            <a class="app-download__main-link btn" href="#">Скачать приложение</a>
-            <ul class="app-download__list link-download">
-              <li class="link-download__item"><a class="link-download__appstore" href="#">App Store</a></li>
-              <li class="link-download__item"><a class="link-download__google-play" href="#">Google Play</a></li>
-              <li class="link-download__item"><a class="link-download__windows-store" href="#">Windows Store</a></li>
-            </ul>
-            <p class="app-download__info">Доступно для Iphone, Ipad, Android,
-              Windows Phone, OS X, Windows 8</p>
-          </div>
-    </section>
+    </div>
+    <div class="app-intro__second-block app-download">
+      <div class="app-download__wrapper">
+        <h1 class="app-download__title">Взгляните на жизнь иначе!</h1>
+        <a class="app-download__main-link btn" href="#">Скачать приложение</a>
+        <ul class="app-download__list link-download">
+          <li class="link-download__item"><a class="link-download__appstore" href="#">App Store</a></li>
+          <li class="link-download__item"><a class="link-download__google-play" href="#">Google Play</a></li>
+          <li class="link-download__item"><a class="link-download__windows-store" href="#">Windows Store</a></li>
+        </ul>
+        <p class="app-download__info">Доступно для Iphone, Ipad, Android,
+          Windows Phone, OS X, Windows 8</p>
+      </div>
+    </div>
+  </div>
+</section>
+  <main class="page-main">
     <section class="page-main__third-block app-info">
         <div class="app-info__wrapper">
           <h2 class="app-info__title">Устали от серости мегаполиса?</h2>
@@ -74,16 +76,17 @@
           <source media="(min-width: 1100px)" srcset="./img/effect-time--desktop.svg">
           <img src="./img/effect-time.svg" alt="Время эффекта">
         </picture>
-        <span class="app-effect__time-day">24</span></img>
+        <span class="app-effect__time-day">24</span>
       </div>
     </section>
     <section class="page-main__fifth-block app-reviews">
-      <div class="app-reviews__wrappe slider">
-        <article class="app-reviews__item app-reviews__item--first">
-          <h3 class="app-reviews__title">Николай Петров <span class="app-reviews__title-info">25 лет, водитель трамвая</span></h3>
-          <p class="app-reviews__text">«Это приложение перевернуло мой мир и
-            позволило по-новому взглянуть на привычные серые вещи!
-            А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+      <div class="app-reviews__wrapper">
+        <div class="slider">
+          <article class="app-reviews__item app-reviews__item--first">
+            <h3 class="app-reviews__title">Николай Петров <span class="app-reviews__title-info">25 лет, водитель трамвая</span></h3>
+            <p class="app-reviews__text">«Это приложение перевернуло мой мир и
+              позволило по-новому взглянуть на привычные серые вещи!
+              А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </article>
           <article class="app-reviews__item app-reviews__item--second">
             <h3 class="app-reviews__title">Робот из Boston Dynamics <span class="app-reviews__title-info">5 лет, умею делать кувырок</span></h3>
@@ -94,34 +97,37 @@
             <p class="app-reviews__text">«И опять привет! Не так давно, у меня появилась рука, и теперь умею открывать дверь. Скоро доберусь и до вашего приложения (;»</p>
           </article>
         </div>
+        </div>
       </section>
     <section class="page-main__sixth-block app-price">
-      <table class="app-price__app-version table-version">
-            <tr class="table-version__title">
-              <td class="table-version__line-name"></td>
-              <td class="table-version__base">База <span>1,99 Usd</span></td>
-              <td class="table-version__standart">Стандарт <span>3,99 Usd</span></td>
-              <td class="table-version__unlim">Анлим <span>9,99 Usd</span></td>
-            </td>
-            <tr class="table-version__pink-filter">
-              <td class="table-version__line-name">Розовый фильтр</td>
-              <td class="table-version__base">Розовый фильтр</td>
-              <td class="table-version__standart">Розовый фильтр</td>
-              <td class="table-version__unlim">Розовый фильтр</td>
-            </tr>
-            <tr class="table-version__smile">
-              <td class="table-version__line-name">Смайлики</td>
-              <td class="table-version__base">Смайлики</td>
-              <td class="table-version__standart">Смайлики</td>
-              <td class="table-version__unlim">Смайлики</td>
-            </tr>
-            <tr class="table-version__comments">
-              <td class="table-version__line-name">Комментарии</td>
-              <td class="table-version__base">Комментарии</td>
-              <td class="table-version__standart">Комментарии</td>
-              <td class="table-version__unlim">Комментарии</td>
-            </tr>
+      <div class="app-price__wrapper">
+        <table class="app-price__app-version table-version">
+          <tr class="table-version__title">
+            <td class="table-version__line-name"></td>
+            <td class="table-version__base">База <span>1,99 Usd</span></td>
+            <td class="table-version__standart">Стандарт <span>3,99 Usd</span></td>
+            <td class="table-version__unlim">Анлим <span>9,99 Usd</span></td>
+          </tr>
+          <tr class="table-version__pink-filter">
+            <td class="table-version__line-name">Розовый фильтр</td>
+            <td class="table-version__base">Розовый фильтр</td>
+            <td class="table-version__standart">Розовый фильтр</td>
+            <td class="table-version__unlim">Розовый фильтр</td>
+          </tr>
+          <tr class="table-version__smile">
+            <td class="table-version__line-name">Смайлики</td>
+            <td class="table-version__base">Смайлики</td>
+            <td class="table-version__standart">Смайлики</td>
+            <td class="table-version__unlim">Смайлики</td>
+          </tr>
+          <tr class="table-version__comments">
+            <td class="table-version__line-name">Комментарии</td>
+            <td class="table-version__base">Комментарии</td>
+            <td class="table-version__standart">Комментарии</td>
+            <td class="table-version__unlim">Комментарии</td>
+          </tr>
         </table>
+      </div>
     </section>
     <section class="page-main__seventh-block our-contacts">
       <div class="our-contacts__wrapper">
@@ -129,23 +135,16 @@
         <div class="our-contacts__list">
           <article class="our-contacts__phone our-phone">
             <h3 class="our-phone__title">Звоните:</h3>
-            <a  class="our-phone__item"href="tel:+7812556666">
-              <span>
-                +7 (812) 555-66-66
-              </span>
-            </a>
+            <a  class="our-phone__item"href="tel:+7812556666"><span>+7 (812) 555-66-66</span></a>
           </article>
           <article class="our-contacts__email our-email">
             <h3 class="our-email__title" >Пишите:</h3>
-            <a  class="our-email__item" href="mailto:mail@htmlacademy.ru">
-              <span>
-                mail@htmlacademy.ru</a>
-              </span>
-            </article>
+            <a class="our-email__item" href="mailto:mail@htmlacademy.ru"><span>mail@htmlacademy.ru<span></a>
+          </article>
           <article class="our-contacts__address our-address">
               <h3 class="our-address__title">Приезжайте в гости:</h3>
               <p class="our-address__item">ул. Большая Конюшенная, 19/8</p>
-            </article>
+          </article>
         </div>
       </div>
       <picture class="our-contacts__white-triangle">

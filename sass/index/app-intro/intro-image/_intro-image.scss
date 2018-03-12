@@ -1,12 +1,13 @@
-.intro-image {
+.intro-image__wrapper {
   position: relative;
-  height: 463px;
-  background: #2a3a4a url("../img/bg-mobile.jpg") no-repeat center;
+  min-height: 463px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .intro-image__hand {
   position: absolute;
-  bottom: -3px;
+  bottom: -30px;
   left: 0;
   z-index: 2;
 }
@@ -14,15 +15,20 @@
 .intro-image__result-app {
   position: absolute;
   right: 105px;
-  bottom: 81px;
+  bottom: 54px;
   z-index: 1;
 }
 
 @media (min-width: 660px) {
-  .intro-image {
+   .intro-image__wrapper {
+    width: 660px;
     min-height: 729px;
-    background: #2a3a4a url("../img/bg-tablet.jpg") no-repeat center;
   }
+
+  .intro-image__hand {
+    bottom: -3px;
+  }
+
 
   .intro-image__result-app {
     right: 95px;
@@ -32,9 +38,13 @@
 
 @media (min-width: 1100px) {
   .intro-image {
-    min-height: 853px;
     padding: 0;
     background: none;
+  }
+
+  .intro-image__wrapper {
+    width: 1100px;
+    min-height: 853px;
   }
 
   .intro-image__hand {
@@ -43,7 +53,7 @@
   }
 
   .intro-image__result-app {
-    right: 115px;
+    right: 275px;
     bottom: 170px;
   }
 }

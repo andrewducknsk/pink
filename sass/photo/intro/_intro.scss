@@ -1,7 +1,8 @@
 .intro {
   height: 238px;
   margin-top: -66px;
-  background: url("../img/bg-mobile.jpg") no-repeat top;
+  background: url("../img/bg-mobile.jpg") no-repeat center;
+  background-size: cover;
 
 }
 
@@ -21,6 +22,7 @@
     height: 440px;
     margin-top: -110px;
     background: url("../img/bg-tablet.jpg") no-repeat top;
+    background-size: cover;
   }
 
   .intro__title {
@@ -36,5 +38,6 @@
     height: 395px;
     margin-top: -110px;
     background: url("../img/bg-desktop.jpg") no-repeat top;
+    background-size: cover;
   }
 }

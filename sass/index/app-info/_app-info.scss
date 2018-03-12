@@ -4,7 +4,7 @@
     &::before {
       @include bg-gray;
       bottom: 0px;
-      height: 818px;
+      height: 730px;
     }
 }
 
@@ -29,9 +29,15 @@
   .app-info {
     margin-top: -3px;
     &::before {
-      width: 660px;
+      width: 100%;
       height: 525px;
     }
+  }
+
+  .app-info__wrapper {
+    width: 660px;
+    margin: 0 auto;
+    text-align: left;
   }
 
   .app-info__title {
@@ -42,10 +48,6 @@
         margin: 0 auto;
         margin-bottom: 35px;
       }
-  }
-
-  .app-info__wrapper {
-    text-align: left;
   }
 
   .app-info__img-item {
@@ -62,15 +64,17 @@
   .app-info {
     padding-top: 75px;
     &::before {
-      width: 1100px;
-      height: 590px;
-      bottom: -45px;
+      width: 100%;
+      height: 610px;
+      bottom: -65px;
     }
   }
 
   .app-info__wrapper {
     display: flex;
     flex-direction: column;
+    width: 1100px;
+    margin: 0 auto;
     padding: 0 80px;
   }
 

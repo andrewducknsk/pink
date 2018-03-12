@@ -1,0 +1,18 @@
+.posting-photo__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+
+@media (min-width: 660px) {
+  .posting-photo__wrapper {
+    width: 660px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1100px) {
+  .posting-photo__wrapper {
+    width: 1100px;
+    margin: 0 auto;
+  }
+}

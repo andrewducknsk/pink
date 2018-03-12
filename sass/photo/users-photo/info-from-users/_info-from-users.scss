@@ -76,6 +76,12 @@
 }
 
 @media (min-width: 1100px) {
+  .panorama-of-day .info-from-users {
+    width: 1100px;
+    margin: 0 auto;
+    margin-left: -78px;
+  }
+
   .panorama-of-day .info-from-users__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
