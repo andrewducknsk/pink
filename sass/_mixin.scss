@@ -14,7 +14,6 @@
   color: #283645;
 }
 
-
 @mixin bg-gray {
     content: '';
     position: absolute;
@@ -87,6 +86,7 @@
   }
 
 }
+
 @mixin input-decoration {
   &:hover {
     border-color: #283645;
@@ -95,3 +95,4 @@
     border-color: #d22856;
   }
 }
+

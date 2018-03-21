@@ -22,7 +22,7 @@ toddlerDot.onmousedown = function(event) {
       }
 
       toddlerDot.style.left = newLeft + 'px';
-    }
+    };
 
     document.onmouseup = function() {
       document.onmousemove = document.onmouseup = null;

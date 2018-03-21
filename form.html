@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <include src="html/head.html"></include>
 <body>
   <include src="html/header.html"></include>
@@ -15,7 +15,7 @@
           <span class="greeting-form__title-add-text">Пожалуйста, заполните форму ниже:</span></h2>
         </div>
       </section>
-    <form class="page-main__third-block competition-form" method="get" name="form">
+    <form class="page-main__third-block competition-form" method="post" name="form">
       <div class="competition-form__wrapper">
         <section class="competition-form__first-block full-name">
           <div class="full-name__wrapper">
@@ -58,8 +58,8 @@
                 <input class="your-contacts__text" type="phone" id="your-phone" placeholder="Номер, пожалуйста" name="form">
                 <span class="your-contacts__icon"></span>
               </label>
-              <label class="your-contacts__item" for="your-email">Адрес почты
-                <input class="your-contacts__text your-contacts__text--last" type="email" id="your-email" placeholder="Введите почту *" name="form" required>
+              <label class="your-contacts__item" for="yourEmail">Адрес почты
+                <input class="your-contacts__text your-contacts__text--last" type="email" id="yourEmail" placeholder="Введите почту *" name="form" required>
                 <span class="your-contacts__icon your-contacts__icon--last"></span>
               </label>
             </div>
@@ -87,22 +87,22 @@
         </section>
         <button class="competition-form__form-button form-btn" type="submit" name="form">Отправить форму</button>
         <p class="competition-form__required-fields"><span class="competition-form__required-fields--pink-star">*</span> - Обязательные <span class="competition-form__required-fields--none">для заполнения</span> поля</p>
-        <dialog class="competition-form__sixth popup-send popup-send--none">
+        <div class="competition-form__sixth popup-send popup-send--closed">
           <div class="popup-send__wrapper">
             <h2 class="popup-send__title">Ваша заявка отправлена</h2>
             <p class="popup-send__text">Спасибо за Ваше участие, Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим Вас.</p>
           </div>
           <button class="popup-send__button form-btn" type="button" name="button">Закрыть окно</button>
-        </dialog>
-        <dialog class="competition-form__seventh popup-fail popup-fail--none">
+        </div>
+        <div class="competition-form__seventh popup-fail popup-fail--closed">
           <div class="popup-fail__wrapper">
             <h3 class="popup-fail__title">Что-то пошло не так!</h3>
             <p class="popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
           </div>
           <button class="popup-fail__button form-btn" type="button" name="button">Ок</button>
-        </dialog>
+        </div>
       </div>
-      </form>
+    </form>
   </main>
   <include src="html/footer.html"></include>
   <script type="text/javascript" src="./js/picturefill.js"></script>
