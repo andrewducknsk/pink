@@ -96,3 +96,7 @@
   }
 }
 
+@mixin animation-price {
+  transform: translateX(1%);
+  transition: .6s cubic-bezier(.68, -0.55, 0.265, 1.55);
+}
