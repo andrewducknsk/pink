@@ -16,7 +16,12 @@
 }
 
 .bx-pager-link {
-  display: inline-block;
+<<<<<<< HEAD
+=======
+    position: relative;
+    z-index: 10;
+>>>>>>> e775bd1ba30e48067ccf3edfecbfca2cbaa44912
+    display: inline-block;
     width: 6px;
     height: 6px;
     margin-top: -60px;

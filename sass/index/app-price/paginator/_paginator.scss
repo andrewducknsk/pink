@@ -1,0 +1,41 @@
+.paginator {
+  text-align: center;
+}
+
+.paginator .bx-pager-link {
+  margin-top: 0;
+}
+
+#btn-11:checked~.table-version {
+  transform: translateX(1%);
+  transition: .6s cubic-bezier(.68, -0.55, 0.265, 1.55);
+}
+#btn-22:checked~.table-version {
+  transform: translateX(-32%);
+  transition: .6s cubic-bezier(.68, -0.55, 0.265, 1.55);
+}
+#btn-33:checked~.table-version {
+  transform: translateX(-65%);
+  transition: .6s cubic-bezier(.68, -0.55, 0.265, 1.55);
+}
+
+#btn-11:checked~.paginator label[for="btn-11"],
+#btn-22:checked~.paginator label[for="btn-22"],
+#btn-33:checked~.paginator label[for="btn-33"] {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 4px solid #283645;
+}
+
+@media (min-width: 660px) {
+  .paginator {
+    display: none;
+  }
+
+  #btn-11:checked~.table-version,
+  #btn-22:checked~.table-version,
+  #btn-33:checked~.table-version {
+    transform: none;
+  } 
+}
