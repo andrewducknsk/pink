@@ -4,20 +4,20 @@
 <body>
   <include src="html/header.html"></include>
   <main class="page-main">
-    <section class="page-main__first-block intro-form">
+    <section class="intro-form">
         <div class="intro-form__wrapper">
           <h1 class="intro-form__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
         </div>
       </section>
-    <section class="page-main__second-block greeting-form">
+    <section class="greeting-form">
         <div class="greeting-form__wrapper">
           <h2 class="greeting-form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
           <span class="greeting-form__title-add-text">Пожалуйста, заполните форму ниже:</span></h2>
         </div>
       </section>
-    <form class="page-main__third-block competition-form" method="post" name="form">
+    <form class="competition-form" method="post" name="form">
       <div class="competition-form__wrapper">
-        <section class="competition-form__first-block full-name">
+        <section class="full-name">
           <div class="full-name__wrapper">
             <label class="full-name__item" for="surname">Фамилия:
               <input class="full-name__text" type="text" placeholder="Укажите фамилию *" name="form" id="surname"  required></label>
@@ -27,7 +27,7 @@
               <input class="full-name__text full-name__text--last" type="text" placeholder="Ну и отчество тоже" name="form" id="patronymic"></label>
           </div>
         </section>
-        <section class="competition-form__second-block achievements-in-journey">
+        <section class="achievements-in-journey">
           <div class="achievements-in-journey__wrapper">
             <h3 class="achievements-in-journey__title">Ваши безбашенные достижения в путешествии</h3>
             <label class="achievements-in-journey__item" for="shark">
@@ -50,7 +50,7 @@
               <span class="achievements-in-journey__icon"></span>Разгромил отель</label>
           </div>
         </section>
-        <section class="competition-form__third-block your-contacts">
+        <section class="your-contacts">
           <div class="your-contacts__wrapper">
             <h3 class="your-contacts__title">Контактная информация</h3>
             <div class="your-contacts__item-container">
@@ -65,7 +65,7 @@
             </div>
           </div>
         </section>
-        <section class="competition-form__fourth-block your-app">
+        <section class="your-app">
           <div class="your-app__wrapper">
             <h3 class="your-app__title">С каким приложением путешествовали?</h3>
             <label class="your-app__item" for="iOS">
@@ -79,7 +79,7 @@
               <span class="your-app__icon"></span>Windows Phone</label>
           </div>
         </section>
-        <section class="competition-form__fifth your-emotions">
+        <section class="your-emotions">
           <div class="your-emotions__wrapper">
             <h3 class="your-emotions__title">Опешите свои эмоции</h3>
             <textarea class="your-emotions__text" type="textarea" placeholder="Можно прям в красках, не стесняясь в выражениях" name="form"></textarea>
@@ -87,14 +87,14 @@
         </section>
         <button class="competition-form__form-button form-btn" type="submit" name="form">Отправить форму</button>
         <p class="competition-form__required-fields"><span class="competition-form__required-fields--pink-star">*</span> - Обязательные <span class="competition-form__required-fields--none">для заполнения</span> поля</p>
-        <div class="competition-form__sixth popup-send popup-send--closed">
+        <div class="popup-send popup-send--closed">
           <div class="popup-send__wrapper">
             <h2 class="popup-send__title">Ваша заявка отправлена</h2>
             <p class="popup-send__text">Спасибо за Ваше участие, Ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим Вас.</p>
           </div>
           <button class="popup-send__button form-btn" type="button" name="button">Закрыть окно</button>
         </div>
-        <div class="competition-form__seventh popup-fail popup-fail--closed">
+        <div class="popup-fail popup-fail--closed">
           <div class="popup-fail__wrapper">
             <h3 class="popup-fail__title">Что-то пошло не так!</h3>
             <p class="popup-fail__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
